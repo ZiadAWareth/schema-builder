@@ -1,0 +1,2098 @@
+{
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src": {
+    "files": {},
+    "subfolders": [
+      "app",
+      "components",
+      "lib"
+    ]
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app": {
+    "files": {
+      "layout.tsx": {
+        "functions": [
+          "RootLayout"
+        ],
+        "dependencies": [
+          "next",
+          "next/font/google",
+          "./globals.css"
+        ],
+        "functionCalls": {
+          "RootLayout": []
+        }
+      },
+      "page.tsx": {
+        "functions": [
+          "SchemaEditor",
+          "loadTables",
+          "addTable",
+          "handleSaveTable",
+          "handleDeleteTable",
+          "startEditingTableName",
+          "saveTableName",
+          "cancelEditingTableName",
+          "showToast"
+        ],
+        "dependencies": [
+          "next/navigation",
+          "react",
+          "@/components/ui/button",
+          "@/components/ui/card",
+          "@/components/ui/input",
+          "lucide-react",
+          "@/components/schema/TablePage"
+        ],
+        "functionCalls": {
+          "SchemaEditor": [
+            {
+              "name": "useSearchParams",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "get",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "useRef",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "useEffect",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "loadTables": [
+            {
+              "name": "key",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "getItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "error",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "loadTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx",
+                "startLine": 47,
+                "endLine": 71
+              }
+            },
+            {
+              "name": "useEffect",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "focus",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "addTable": [
+            {
+              "name": "now",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "handleSaveTable": [
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setForceUpdate",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "handleDeleteTable": [
+            {
+              "name": "confirm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "removeItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "startEditingTableName": [
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "saveTableName": [
+            {
+              "name": "trim",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setForceUpdate",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "cancelEditingTableName": [
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ],
+          "showToast": [
+            {
+              "name": "createElement",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "appendChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setTimeout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "removeChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setDbConnected",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "saveTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx",
+                "startLine": 170,
+                "endLine": 199
+              }
+            },
+            {
+              "name": "cancelEditingTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx",
+                "startLine": 202,
+                "endLine": 204
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "stopPropagation",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "startEditingTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx",
+                "startLine": 164,
+                "endLine": 167
+              }
+            },
+            {
+              "name": "handleDeleteTable",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx",
+                "startLine": 152,
+                "endLine": 161
+              }
+            },
+            {
+              "name": "reduce",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            },
+            {
+              "name": "slice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/page.tsx"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "subfolders": [
+      "api",
+      "project"
+    ]
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/api": {
+    "files": {},
+    "subfolders": [
+      "generate-schema"
+    ]
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/api/generate-schema": {
+    "files": {
+      "route.ts": {
+        "functions": [],
+        "dependencies": [],
+        "functionCalls": {}
+      }
+    },
+    "subfolders": []
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project": {
+    "files": {},
+    "subfolders": [
+      "editor",
+      "new"
+    ]
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor": {
+    "files": {
+      "layout.tsx": {
+        "functions": [
+          "EditorLayout",
+          "handleGenerateSchema",
+          "handleClearAllTables",
+          "showToast"
+        ],
+        "dependencies": [
+          "@/components/ui/button",
+          "react",
+          "next/navigation"
+        ],
+        "functionCalls": {
+          "EditorLayout": [
+            {
+              "name": "useRouter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "useSearchParams",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "usePathname",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "get",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            }
+          ],
+          "handleGenerateSchema": [
+            {
+              "name": "setGenerating",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "key",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "getItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "error",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "alert",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "indexOf",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "confirm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "join",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "fetch",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "text",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "createObjectURL",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "createElement",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "appendChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "click",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "removeChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            }
+          ],
+          "handleClearAllTables": [
+            {
+              "name": "confirm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "key",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "removeItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "reload",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            }
+          ],
+          "showToast": [
+            {
+              "name": "createElement",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "appendChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "setTimeout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "removeChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/layout.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "page.tsx": {
+        "functions": [
+          "SchemaEditor",
+          "loadTables",
+          "addTable",
+          "handleSaveTable",
+          "handleDeleteTable",
+          "startEditingTableName",
+          "saveTableName",
+          "cancelEditingTableName",
+          "showToast"
+        ],
+        "dependencies": [
+          "next/navigation",
+          "react",
+          "@/components/ui/button",
+          "@/components/ui/card",
+          "@/components/ui/input",
+          "lucide-react",
+          "@/components/schema/TableCreator",
+          "@/components/schema/TableTabs"
+        ],
+        "functionCalls": {
+          "SchemaEditor": [
+            {
+              "name": "useSearchParams",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "get",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "useRef",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "useEffect",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "loadTables": [
+            {
+              "name": "key",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "getItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "error",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "loadTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx",
+                "startLine": 48,
+                "endLine": 72
+              }
+            },
+            {
+              "name": "useEffect",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "focus",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "addTable": [
+            {
+              "name": "now",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "handleSaveTable": [
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setForceUpdate",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "handleDeleteTable": [
+            {
+              "name": "confirm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "removeItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "startEditingTableName": [
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "saveTableName": [
+            {
+              "name": "trim",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setItem",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTables",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setForceUpdate",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "showToast",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "cancelEditingTableName": [
+            {
+              "name": "setEditingTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ],
+          "showToast": [
+            {
+              "name": "createElement",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "appendChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setTimeout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "removeChild",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setDbConnected",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "setEditTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "saveTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx",
+                "startLine": 171,
+                "endLine": 200
+              }
+            },
+            {
+              "name": "cancelEditingTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx",
+                "startLine": 203,
+                "endLine": 205
+              }
+            },
+            {
+              "name": "setActiveTableId",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "stopPropagation",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "startEditingTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx",
+                "startLine": 165,
+                "endLine": 168
+              }
+            },
+            {
+              "name": "handleDeleteTable",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx",
+                "startLine": 153,
+                "endLine": 162
+              }
+            },
+            {
+              "name": "reduce",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            },
+            {
+              "name": "slice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/editor/page.tsx"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "subfolders": []
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new": {
+    "files": {
+      "page.tsx": {
+        "functions": [
+          "NewProject",
+          "handleSubmit"
+        ],
+        "dependencies": [
+          "react",
+          "next/navigation",
+          "@/components/ui/button",
+          "@/components/ui/card",
+          "@/components/ui/input",
+          "@/components/ui/label",
+          "@/components/ui/radio-group"
+        ],
+        "functionCalls": {
+          "NewProject": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            },
+            {
+              "name": "useRouter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            }
+          ],
+          "handleSubmit": [
+            {
+              "name": "preventDefault",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            },
+            {
+              "name": "encodeURIComponent",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            },
+            {
+              "name": "setProjectName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            },
+            {
+              "name": "trim",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/app/project/new/page.tsx"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "subfolders": []
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components": {
+    "files": {},
+    "subfolders": [
+      "schema",
+      "ui"
+    ]
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema": {
+    "files": {
+      "ApiPreview.tsx": {
+        "functions": [
+          "ApiPreview",
+          "formatApiPath",
+          "formatModelName",
+          "getPrimaryKey",
+          "generateApiRoutes",
+          "handleCopyClick"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/card",
+          "@/components/ui/button",
+          "lucide-react"
+        ],
+        "functionCalls": {
+          "ApiPreview": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            }
+          ],
+          "formatApiPath": [
+            {
+              "name": "replace",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "toLowerCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            }
+          ],
+          "formatModelName": [
+            {
+              "name": "replace",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "test",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "toUpperCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "charAt",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "slice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            }
+          ],
+          "getPrimaryKey": [
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            }
+          ],
+          "generateApiRoutes": [
+            {
+              "name": "formatApiPath",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx",
+                "startLine": 34,
+                "endLine": 40
+              }
+            },
+            {
+              "name": "formatModelName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx",
+                "startLine": 43,
+                "endLine": 54
+              }
+            },
+            {
+              "name": "getPrimaryKey",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx",
+                "startLine": 57,
+                "endLine": 60
+              }
+            },
+            {
+              "name": "toLowerCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "includes",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "forEach",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "slice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "generateApiRoutes",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx",
+                "startLine": 63,
+                "endLine": 101
+              }
+            }
+          ],
+          "handleCopyClick": [
+            {
+              "name": "writeText",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "setCopied",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            },
+            {
+              "name": "setTimeout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/ApiPreview.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "FormBuilder.tsx": {
+        "functions": [
+          "FormBuilder",
+          "getInputType"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/card",
+          "@/components/ui/button",
+          "lucide-react",
+          "@/components/ui/tabs"
+        ],
+        "functionCalls": {
+          "FormBuilder": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            }
+          ],
+          "getInputType": [
+            {
+              "name": "toLowerCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            },
+            {
+              "name": "setFormLayout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            },
+            {
+              "name": "includes",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            },
+            {
+              "name": "getInputType",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx",
+                "startLine": 35,
+                "endLine": 55
+              }
+            },
+            {
+              "name": "replace",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/FormBuilder.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "RelationshipDiagram.tsx": {
+        "functions": [
+          "RelationshipDiagram",
+          "getTableName",
+          "formatName",
+          "addRelationship"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/card",
+          "@/components/ui/button",
+          "lucide-react",
+          "@/components/ui/select"
+        ],
+        "functionCalls": {
+          "RelationshipDiagram": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            }
+          ],
+          "getTableName": [
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            }
+          ],
+          "formatName": [
+            {
+              "name": "replace",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            }
+          ],
+          "addRelationship": [
+            {
+              "name": "now",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            },
+            {
+              "name": "setRelationships",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            },
+            {
+              "name": "setShowAddRelationship",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            },
+            {
+              "name": "setNewRelationship",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            },
+            {
+              "name": "getTableName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx",
+                "startLine": 61,
+                "endLine": 64
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/RelationshipDiagram.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "SchemaPreview.tsx": {
+        "functions": [
+          "SchemaPreview",
+          "formatModelName",
+          "mapToPrismaType",
+          "generateSchema",
+          "handleCopyClick"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/card",
+          "@/components/ui/button",
+          "lucide-react"
+        ],
+        "functionCalls": {
+          "SchemaPreview": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            }
+          ],
+          "formatModelName": [
+            {
+              "name": "replace",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "test",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "toUpperCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "charAt",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "slice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            }
+          ],
+          "mapToPrismaType": [
+            {
+              "name": "toLowerCase",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            }
+          ],
+          "generateSchema": [
+            {
+              "name": "formatModelName",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx",
+                "startLine": 34,
+                "endLine": 45
+              }
+            },
+            {
+              "name": "forEach",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "mapToPrismaType",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx",
+                "startLine": 48,
+                "endLine": 69
+              }
+            },
+            {
+              "name": "push",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "join",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            }
+          ],
+          "handleCopyClick": [
+            {
+              "name": "writeText",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "generateSchema",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx",
+                "startLine": 72,
+                "endLine": 132
+              }
+            },
+            {
+              "name": "setCopied",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            },
+            {
+              "name": "setTimeout",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/SchemaPreview.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "TableCreator.tsx": {
+        "functions": [
+          "TableCreator",
+          "handleEditField",
+          "handleSaveField",
+          "handleDeleteField",
+          "handleAddField"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/button",
+          "@/components/ui/card",
+          "@/components/ui/input",
+          "@/components/ui/label",
+          "@/components/ui/select",
+          "lucide-react"
+        ],
+        "functionCalls": {
+          "TableCreator": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "parse",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "stringify",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "now",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "useEffect",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setTable",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            }
+          ],
+          "handleEditField": [
+            {
+              "name": "setEditingField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setEnumValues",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "join",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setShowFieldForm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            }
+          ],
+          "handleSaveField": [
+            {
+              "name": "trim",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "split",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "find",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setTable",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "onSave",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setEditingField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setShowFieldForm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            }
+          ],
+          "handleDeleteField": [
+            {
+              "name": "confirm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setTable",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "onSave",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            }
+          ],
+          "handleAddField": [
+            {
+              "name": "setEditingField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "now",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "substr",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "toString"
+            },
+            {
+              "name": "random",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setShowFieldForm",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "setEnumValues",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "onSave",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "map",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "handleEditField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx",
+                "startLine": 118,
+                "endLine": 123
+              }
+            },
+            {
+              "name": "handleDeleteField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx",
+                "startLine": 168,
+                "endLine": 177
+              }
+            },
+            {
+              "name": "some",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "filter",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "split",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "trim",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "splice",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "join",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "preventDefault",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            },
+            {
+              "name": "includes",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableCreator.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "TablePage.tsx": {
+        "functions": [
+          "TablePage"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/tabs",
+          "@/components/schema/TableCreator",
+          "@/components/schema/SchemaPreview",
+          "@/components/schema/RelationshipDiagram",
+          "@/components/schema/ApiPreview"
+        ],
+        "functionCalls": {
+          "TablePage": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TablePage.tsx"
+              }
+            },
+            {
+              "name": "setIsAddingField",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TablePage.tsx"
+              }
+            }
+          ]
+        }
+      },
+      "TableTabs.tsx": {
+        "functions": [
+          "TableTabs"
+        ],
+        "dependencies": [
+          "react",
+          "@/components/ui/tabs",
+          "@/components/schema/TableCreator",
+          "@/components/schema/SchemaPreview",
+          "@/components/schema/RelationshipDiagram",
+          "@/components/schema/ApiPreview",
+          "@/components/ui/card"
+        ],
+        "functionCalls": {
+          "TableTabs": [
+            {
+              "name": "useState",
+              "location": {
+                "file": "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/schema/TableTabs.tsx"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "subfolders": []
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/components/ui": {
+    "files": {
+      "button.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@radix-ui/react-slot",
+          "class-variance-authority",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "card.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "input.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "label.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@radix-ui/react-label",
+          "class-variance-authority",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "radio-group.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@radix-ui/react-radio-group",
+          "lucide-react",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "select.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@radix-ui/react-select",
+          "lucide-react",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      },
+      "tabs.tsx": {
+        "functions": [],
+        "dependencies": [
+          "react",
+          "@radix-ui/react-tabs",
+          "@/lib/utils"
+        ],
+        "functionCalls": {}
+      }
+    },
+    "subfolders": []
+  },
+  "/Users/helshamy/Documents/Dev/caudex/schema-builder/src/lib": {
+    "files": {
+      "utils.ts": {
+        "functions": [],
+        "dependencies": [],
+        "functionCalls": {}
+      }
+    },
+    "subfolders": []
+  }
+}
