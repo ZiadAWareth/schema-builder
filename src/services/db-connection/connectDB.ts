@@ -1,28 +1,27 @@
-export const handleConnectToDB = async (
-  dbType: string,
-  projectName: string,
-  prismaSchema: string
-) => {
+// src/services/db-connection/index.ts
+export async function handleConnectToDB(): Promise<{
+  stdout?: string;
+  stderr?: string;
+  error?: string;
+}> {
   try {
     const response = await fetch("/api/db-connection", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ dbType, projectName, prismaSchema }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        /* any data if needed */
+      }),
     });
-
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      const errorData = await response.json();
+      return { error: errorData.error || "Unknown error" };
     }
-
-    const result = await response.json();
-    return result.success;
+    return await response.json();
   } catch (error) {
-    console.error("Failed to connect to DB:", error);
-    return false;
+    console.error("Error pushing connection command:", error);
+    return { error: "Internal Error" };
   }
-};
+}
 
 export const generateConnectionString = (
   dbType: string,
