@@ -19,6 +19,8 @@ import { Table } from "@/types/Table";
 import { Field } from "@/types/Field";
 import { Sidebar } from "@/components/ui/Sidebar"; // Import the Sidebar component
 import { handleGenerateSchema } from "@/services/schema-generation/generateSchema";
+import { SchemaModal } from "@/components/schema/SchemaModal"; // Import the SchemaModal component
+
 export default function SchemaEditor() {
   const searchParams = useSearchParams();
   const projectName = searchParams.get("name") || "Untitled Project";
@@ -31,6 +33,8 @@ export default function SchemaEditor() {
   const [forceUpdate, setForceUpdate] = useState(0); // Force re-render trigger
   const [dbType, setDbType] = useState(initialDbType);
   const [generating, setGenerating] = useState(false); // Add generating state
+  const [schemaModalOpen, setSchemaModalOpen] = useState(false); // State for schema modal
+  const [generatedSchema, setGeneratedSchema] = useState(''); // State to store generated schema
 
   // State for inline table name editing
   const [editingTableId, setEditingTableId] = useState<string | null>(null);
@@ -338,7 +342,9 @@ export default function SchemaEditor() {
                 projectName,
                 tables,
                 setGenerating,
-                showToast
+                showToast,
+                setSchemaModalOpen,
+                setGeneratedSchema
               )
             }
             disabled={generating}
@@ -442,6 +448,13 @@ export default function SchemaEditor() {
           )}
         </main>
       </div>
+
+      {/* Schema Modal */}
+      <SchemaModal 
+        schema={generatedSchema}
+        isOpen={schemaModalOpen}
+        onClose={() => setSchemaModalOpen(false)}
+      />
     </div>
   );
 }
